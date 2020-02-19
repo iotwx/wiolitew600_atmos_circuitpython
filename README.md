@@ -45,3 +45,12 @@ This node is based on the [CircuitPython 5.0.0 Beta 3](https://github.com/adafru
 4. Insert the Grove cable into an available I2C port and attach the BME280 onto the other end.
 
 5. Test the sensor with the code provided in the test folder.
+
+## Limitations and Issues
+Please post any issues with the software or documentation in the [issues](https://github.com/iotwx/wiolitew600_atmos_circuitpython/issues) area of this repository.
+
+At the time of CirctuitPython 5.0.0, Wifi capabilities are not implemented for this chip. 
+[According to the CircuitPython development team](https://learn.adafruit.com/adafruit-feather/circuitpython), (as of Q1/2020) since the MicroPython libraries are not yet implemented for the full feature set of the SAMD21 M0 chipset functionalities like Wifi, BLE and others are not yet implemented in CircuitPython: 
+![](./cp_samd21_limitations.png)
+
+Thus, none of the typical communications capabilities are implemented, but will be integreated when they are available.
